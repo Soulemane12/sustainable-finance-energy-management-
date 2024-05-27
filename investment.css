@@ -1,0 +1,29 @@
+.investment-container {
+    margin-top: 20px;
+    background: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.investment-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.investment-container li {
+    margin-bottom: 1em;
+}
+
+.investment-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.investment-container button:hover {
+    background-color: #45a049;
+}

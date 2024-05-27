@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rewards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.1/dist/tesseract.min.js" defer></script>
+    <script src="rewards.js" defer></script>
+    <script src="auth.js" defer></script>
+    <script src="navbar.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Rewards</h1>
+        <div class="topnav">
+            <a href="index.html" class="active">Home</a>
+            <div id="myLinks">
+                <a href="energy.html">Energy Dashboard</a>
+                <a href="spending.html">Spending Tracker</a>
+                <a href="education.html">Education</a>
+                <a href="rewards.html">Rewards</a>
+                <a href="investment.html">Investment</a>
+                <a href="#" onclick="logout()">Logout</a>
+            </div>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <section class="content">
+        <h2>Your Sustainable Activities</h2>
+        <div class="dashboard-content">
+            <div id="rewards" class="rewards-container"></div>
+            <div id="upload-receipt" class="upload-receipt-container">
+                <h3>Upload Receipt for Organic Products 
+                    <i class="fa fa-info-circle" id="info-btn"></i>
+                    <span class="tooltip-text" id="tooltip-text">Upload a receipt showing the purchase of organic products like fruits or vegetables. The system will analyze the receipt and award points if valid.</span>
+                </h3>
+                <form id="receipt-form">
+                    <input type="file" id="receipt" name="receipt" accept="image/*" required>
+                    <button type="submit">Upload Receipt</button>
+                </form>
+                <div id="receipt-status"></div>
+                <div id="loading" class="loading-spinner" style="display:none;">
+                    <i class="fa fa-spinner fa-spin"></i> Analyzing receipt...
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <h2>Redeem Your Points</h2>
+        <div class="dashboard-content">
+            <div id="redeemable-items" class="redeemable-items-container">
+                <h3>Available Rewards</h3>
+                <ul id="items-list" class="items-list">
+                    <!-- Items will be dynamically populated here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Sustainable Finance and Energy Management Platform</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="profile.js" defer></script>
+    <script src="auth.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>User Profile</h1>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="investment.html">Investment</a></li>
+                <li><a href="energy.html">Energy</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li id="login-link"><a href="login.html">Login</a></li>
+                <li id="register-link"><a href="register.html">Register</a></li>
+                <li id="logout-link" style="display:none;"><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="profile-container">
+            <a href="profile.html"><img src="default-avatar.png" alt="Profile" id="profile-img"></a>
+        </div>
+    </header>
+    <section class="content">
+        <div class="profile-container">
+            <img src="default-avatar.png" alt="Profile Image" id="profile-img">
+            <h2 id="user-name">User Name</h2>
+            <p>Email: <span id="profile-email">user@example.com</span></p>
+            <p>Joined: <span id="join-date">2024-01-01</span></p>
+            <div class="profile-progress">
+                <h3>Progress</h3>
+                <p>Courses Completed: <span id="courses-completed">0</span></p>
+                <p>Rewards Earned: <span id="rewards-earned">0</span></p>
+                <p>Energy Saved: <span id="energy-saved">0 kWh</span></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Sustainable Finance and Energy Management Platform</p>
+    </footer>
+</body>
+</html>
