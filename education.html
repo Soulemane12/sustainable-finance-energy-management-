@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="education.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="education.js" defer></script>
+    <script src="auth.js" defer></script>
+    <script src="navbar.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Educational Platform</h1>
+        <div class="topnav">
+            <a href="index.html" class="active">Home</a>
+            <div id="myLinks">
+                <a href="energy.html">Energy Dashboard</a>
+                <a href="spending.html">Spending Tracker</a>
+                <a href="education.html">Education</a>
+                <a href="rewards.html">Rewards</a>
+                <a href="investment.html">Investment</a>
+                <a href="#" onclick="logout()">Logout</a>
+            </div>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <section class="content">
+        <h2>Learn About Sustainability</h2>
+        <div id="courses" class="courses-container">
+            <!-- Courses will be dynamically populated here -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Sustainable Finance and Energy Management Platform</p>
+    </footer>
+</body>
+</html>
